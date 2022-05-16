@@ -1,0 +1,19 @@
+{
+  "name": "velardeventures",
+  "version": "1.0.0",
+  "description": "* What Is Velarde Ventures? (Short Intro of The company)\r * What do they do / What are their services?\r * Who are in the team?\r * Background of the Team? (Invidually)\r * Where Is it located?\r * How does it work? (I dont understand the question also haha)\r * How many clients have they Worked with? (Currently)\r * How much is the cost of their services?\r * How can VV be contacted ?\r * What are their mission and vision?",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RJEXE/VelardeVentures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RJEXE/VelardeVentures/issues"
+  },
+  "homepage": "https://github.com/RJEXE/VelardeVentures#readme"
+}
