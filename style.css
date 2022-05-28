@@ -10,19 +10,22 @@ body{
     color: #1A4269;
 }
 
-header {
+nav {
+    position: sticky;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
     background-color: #212121;
     font-size: 20px;
+    transition: flex-wrap 0.5s;
 }
 
-header li {
+nav li {
     list-style: none;
 }
-header a{
+nav a{
     text-decoration: none;
     color: #cdd5d6;
 }
@@ -32,10 +35,6 @@ header a{
     align-items: center;
 } 
 
-.logoSection a {
-    margin: 5px;
-}
-
 .logoSection a{
     font-weight: 500;
 }
@@ -44,6 +43,10 @@ header a{
     border-radius: 50%;
     max-width: 100px;
     max-height: 50px;
+}
+
+a.logoName {
+    margin: auto 30px auto 18px;
 }
 
 .navLinks {
@@ -74,25 +77,28 @@ header a{
     border-radius: 50px;
 }
 
-.navCta {
+.cta {
     background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
     margin: 10px;
-    padding: 9px 20px;
+    padding: 5px 20px;
     text-align: center;
-    text-transform: uppercase;
+    
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 10px #eee;
     border-radius: 10px;
-    display: block;
-    font-size: 15px;
+    
 }
 
-.navCta:hover {
+.cta:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+}
+
+.cta::after{
+    display: none;
 }
 
 .menuBtn {
@@ -138,36 +144,30 @@ header a{
     background-color: #ffffff;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 800px) {
     .menuBtn {
         display: flex;
     }
     .navLinks {
-        flex-direction: column;
-        justify-content: space-around;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 500px;
-        height: 100vh;
-        transform: translateX(100vw);
-        background-color: #8e9eab;
-        transition: transform 0.3s ease-in-out;
-    }
-    .navLinks.open {
-        transform: translateX(0);
-    }
-    .navLinks li {
-        width: 45vw;
-        height: 100%;
-    }
-    .navLinks li a {
-        color: #ffffff;
-        font-size: 5vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
         width: 100%;
-        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .navItems{
+        margin: 20px 50px;
+        text-align: center;
+    }
+
+    .navCta{
+        margin-left: 50px;
+    }
+
+    .navLinks.show{
+        display: flex;
+        transition: .5s;
     }
 }
