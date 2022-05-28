@@ -13,13 +13,12 @@ body{
 nav {
     position: sticky;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
     background-color: #212121;
     font-size: 20px;
-    transition: flex-wrap 0.5s;
 }
 
 nav li {
@@ -144,30 +143,51 @@ a.logoName {
     background-color: #ffffff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     .menuBtn {
         display: flex;
     }
+
+    .navLinks li {
+        margin: 0;
+    }
     .navLinks {
-        display: none;
+        position: fixed;
+        height: 30%;
         width: 100%;
-        flex-direction: column;
+        top: 95px;
+        left: -100%;
         text-align: center;
         align-items: center;
-        margin: 20px;
-    }
-
-    .navItems{
-        margin: 20px 50px;
-        text-align: center;
-    }
-
-    .navCta{
-        margin-left: 50px;
+        
+        justify-content: center;
+        flex-direction: column;
+        background-color: #212121;
+        display: grid;
+        place-items: center;
+        float: left;
     }
 
     .navLinks.show{
-        display: flex;
-        transition: .5s;
+        left: 0;
+        transition: all .5s ease-in-out; 
     }
 }
+
+@media (max-width: 330px) {
+    .navLogo{
+        margin: 5px;
+    }
+    .logoName {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 290px) {
+    .logoName {
+        display: none;
+    }
+}
+
+
