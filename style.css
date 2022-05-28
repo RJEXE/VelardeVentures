@@ -158,10 +158,11 @@ a.logoName {
     }
 
     .navItems{
-        margin: 20px 50px;
+        margin-bottom: 20px;
+        justify-content: space-between;
         text-align: center;
     }
-
+  
     .navCta{
         margin-left: 50px;
     }
