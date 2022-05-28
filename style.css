@@ -149,6 +149,7 @@ a.logoName {
         display: flex;
     }
     .navLinks {
+       justify-content: space-between;
         display: none;
         width: 100%;
         flex-direction: column;
