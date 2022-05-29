@@ -10,8 +10,8 @@ body{
     color: #1A4269;
 }
 
+
 nav {
-    position: sticky;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -30,6 +30,7 @@ nav a{
 }
 
 .logoSection {
+    position: inherit;
     display: flex;
     align-items: center;
 } 
@@ -50,6 +51,7 @@ a.logoName {
 
 .navLinks {
     display: flex;
+    
 }
 
 .navLinks li {
@@ -62,6 +64,7 @@ a.logoName {
     height: 3px;
     background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
     transition: width .3s;
+    position: inherit;
 }
 
 .navItems:hover::after {
@@ -143,7 +146,29 @@ a.logoName {
     background-color: #ffffff;
 }
 
+
+section #intro {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(220, 235, 240, 0.6);
+    background-image: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+
 @media (max-width: 860px) {
+    #navbar {
+        position: fixed;
+    }
+
     .menuBtn {
         display: flex;
     }
@@ -152,14 +177,13 @@ a.logoName {
         margin: 0;
     }
     .navLinks {
-        position: fixed;
+        position: absolute;
         height: 30%;
         width: 100%;
         top: 95px;
         left: -100%;
         text-align: center;
         align-items: center;
-        
         justify-content: center;
         flex-direction: column;
         background-color: #212121;
