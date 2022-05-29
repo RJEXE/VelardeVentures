@@ -12,6 +12,8 @@ body{
 
 
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -147,11 +149,6 @@ a.logoName {
 }
 
 
-section #intro {
-    max-width: 100vw;
-    max-height: 100vh;
-}
-
 #intro {
     height: 100vh;
     width: 100vw;
@@ -178,7 +175,7 @@ section #intro {
     }
     .navLinks {
         position: absolute;
-        height: 30%;
+        height: 300%;
         width: 100%;
         top: 95px;
         left: -100%;
