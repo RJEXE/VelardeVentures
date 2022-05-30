@@ -160,6 +160,25 @@ a.logoName {
     background-position: center;
 }
 
+.textSection {
+  float: left;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.textSection li{
+  list-style: none;
+}
+
+.textSection a {
+  text-decoration: none;
+}
+
+.introLogoSection img {
+  float: right;
+  width: 150px;
+  height: 150px;
+}
 
 @media (max-width: 860px) {
     #navbar {
