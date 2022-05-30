@@ -8,10 +8,12 @@
 body{
     background-color: #e0e3e4;
     color: #1A4269;
+    overflow-x: hidden;
 }
 
 
 nav {
+    z-index: 5;
     position: sticky;
     top: 0;
     display: flex;
@@ -158,27 +160,78 @@ a.logoName {
     background-size: cover;
     background-blend-mode: overlay;
     background-position: center;
+
+    text-align: left;
+    justify-content: center;
 }
 
-.textSection {
-  float: left;
-  text-align: center;
-  justify-content: space-between;
+/* .textSection {
+    float: left;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+
+.introLogoSection img {
+    float: right;
+    width: 150px;
+    height: 150px;
+} */
+
+
+
+
+.introSection{
+    position: absolute;
+    padding: 10%;
+    color: #0b0c0c;
+}
+
+.introLogo {
+    border-radius: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.introSection h1 {
+    margin: 10px;
+    font-size: 50px;
+}
+.introSection h2 {
+    margin: 10px;
+    font-size: 30px;
+}
+.introSection h3 {
+    margin: 10px auto 40px auto;
+    font-size: 20px;
+}
+.introSection button {
+    margin: 10px;
+    font-size: 16px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color: #edf0f1;
 }
 
 .textSection li{
-  list-style: none;
+    list-style: none;
 }
 
 .textSection a {
-  text-decoration: none;
+    text-decoration: none;
+}
+.textSection .cta{
+    margin-top: 100px;
+    font-size: 16px;
+    padding: 9px 25px;
 }
 
-.introLogoSection img {
-  float: right;
-  width: 150px;
-  height: 150px;
-}
 
 @media (max-width: 860px) {
     #navbar {
