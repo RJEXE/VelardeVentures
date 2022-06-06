@@ -160,7 +160,8 @@ a.logoName {
     background-size: cover;
     background-blend-mode: overlay;
     background-position: center;
-
+    display: grid;
+    place-items: center;
     text-align: left;
     justify-content: center;
 }
@@ -183,9 +184,9 @@ a.logoName {
 
 
 .introSection{
-    position: absolute;
-    padding: 10%;
     color: #0b0c0c;
+    justify-content: center;
+    text-align: left;
 }
 
 .introLogo {
@@ -217,6 +218,13 @@ a.logoName {
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
     color: #edf0f1;
+}
+
+.textSection {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  justify-content: center;
 }
 
 .textSection li{

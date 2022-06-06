@@ -15,3 +15,4 @@ function toggle() {
 menuBtn.addEventListener("click", () =>{
     menuItems.classList.toggle("show");
 });
+
