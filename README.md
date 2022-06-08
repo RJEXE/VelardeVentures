@@ -41,7 +41,7 @@
 
 ## Info
 - We Are an Internet Marketing Service
-- Digital marketing services are professional services that help market or advertise your business online, like through search, social media, and paid channels. They focus solely on digital channels versus traditional marketing channels like print or television
+- Digital marketing services are professional services that help market or advertise your business online, like through search, social media, and paid channels. They focus solely on digital channels versus traditional marketing channels like print or television.
 - We Help You Market your Bussiness anwhere from over and under and we also do anything under the rainbow
 - We Are Located In https://goo.gl/maps/FqYs3X8z6tdVnbVg9 or 225-5 Ishimori, Kani, Gifu 509-0216, Japan
 - We are Always Open

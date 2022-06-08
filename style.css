@@ -160,7 +160,6 @@ a.logoName {
     background-size: cover;
     background-blend-mode: overlay;
     background-position: center;
-
     text-align: left;
     justify-content: center;
 }
@@ -234,6 +233,22 @@ a.logoName {
 
 
 @media (max-width: 860px) {
+    img.introLogo{
+        width: 150px;
+        height: 150px;
+    }
+
+    .introSection h1{        
+        font-size: 40px;
+    }
+    .introSection h2{        
+        font-size: 25px;
+    }
+    .introSection h3{        
+        font-size: 20px;
+    }
+
+
     #navbar {
         position: fixed;
     }
@@ -265,6 +280,11 @@ a.logoName {
         left: 0;
         transition: all .5s ease-in-out; 
     }
+}
+
+
+#about {
+    
 }
 
 @media (max-width: 330px) {
