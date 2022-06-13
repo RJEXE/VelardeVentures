@@ -151,6 +151,10 @@ a.logoName {
 }
 
 
+
+
+
+
 #intro {
     height: 100vh;
     width: 100vw;
@@ -160,30 +164,18 @@ a.logoName {
     background-size: cover;
     background-blend-mode: overlay;
     background-position: center;
-    text-align: left;
-    justify-content: center;
 }
 
-/* .textSection {
-    float: left;
+.introTest {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
     text-align: center;
-    justify-content: space-between;
 }
 
-
-
-.introLogoSection img {
-    float: right;
-    width: 150px;
-    height: 150px;
-} */
-
-
-
-
-.introSection{
+/* .introSection{
     position: absolute;
-    padding: 10%;
+    padding-left: 10%;
     color: #0b0c0c;
 }
 
@@ -192,6 +184,7 @@ a.logoName {
     width: 200px;
     height: 200px;
     margin: 10px;
+    float: right;
 }
 
 .introSection h1 {
@@ -229,10 +222,18 @@ a.logoName {
     margin-top: 100px;
     font-size: 16px;
     padding: 9px 25px;
-}
+} */
+
+
+
+
 
 
 @media (max-width: 860px) {
+    #intro {
+        height: 60vh;
+    }
+
     img.introLogo{
         width: 150px;
         height: 150px;
